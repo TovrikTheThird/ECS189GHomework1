@@ -1,0 +1,76 @@
+2A
+>> x = randperm(1000)
+
+returns 1000 random permutations between 1 and 1000
+
+-----------------------------------------------------------------------------------------------------
+2B
+
+>> a = [1,2,3; 4,5,6; 7,8,9;];
+>> b = a(2,:);
+
+creates a 3x3 matrix and stores it in variable a then takes row 2 and stores that in variable b
+
+-----------------------------------------------------------------------------------------------------
+2C
+>> a = [1,2,3; 4,5,6; 7,8,9;];
+>> b = a(:);
+
+creates a 3x3 matrix and stores it in variable a then takes the elements in column major order and stores them as a vector in b
+
+-----------------------------------------------------------------------------------------------------
+2D
+
+>> f = randn(5,1);
+>> g = f(find(f>0));
+
+creates 5 random numbers between -1 and 1 and stores them in f then stores all numbers in f greater than 0 in g
+
+-----------------------------------------------------------------------------------------------------
+2E
+
+>> x = zeros(1,10) + 0.5;
+>> y = 0.5 * ones(1,length(x));
+>> z = x + y;
+
+creates a 1x10 matrix of 0's and then adds 0.5 to all those values and stores this in x (1x10 matrix of 0.5)
+creates a 1xlength(x) matrix of ones and mutlitples by 0.5 and stores these values in y (1x10 matrix of 0.5)
+adds x and y and stores this in z (1x10 matrix of 1)
+
+-----------------------------------------------------------------------------------------------------
+2F
+
+>> a = [1:100];
+>> b = a([end:-1:1]);
+
+creates a 1x100 matrix of the values 1-100 respectively and stores this in a
+reverses the order of the vector and stores this in b
+
+-----------------------------------------------------------------------------------------------------
+
+3A
+>> function roll = dice
+>> randi(6)
+>> end
+
+-----------------------------------------------------------------------------------------------------
+3B
+
+>> y = [1, 2, 3, 4, 5, 6]
+>> Z = reshape(y , [2,3])
+
+-----------------------------------------------------------------------------------------------------
+3C
+
+>> x = max(max(z))
+>> [r,c] = find(z == 6)
+
+-----------------------------------------------------------------------------------------------------
+3D
+
+>> v = [1, 8, 8, 2, 1, 3, 9, 8]
+>> x = sum(v==v(1))
+
+-----------------------------------------------------------------------------------------------------
+4A
+
